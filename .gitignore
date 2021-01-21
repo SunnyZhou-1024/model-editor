@@ -1,0 +1,15 @@
+# Binaries
+*.so
+*.obj
+*.dll
+*.pyc
+*.a
+*.o
+*.exe
+
+# Files
+*.cmake
+
+
+# Directories
+build/
