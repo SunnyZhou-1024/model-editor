@@ -6,10 +6,12 @@
 #include <vector>
 
 #include "types.h"
+#include "onnx-ml.pb.h"
 
 namespace model_editor {
 
 class Graph {
+    
 public:
     Graph();
 
@@ -17,7 +19,7 @@ private:
     std::vector<std::unique_ptr<Node>> nodes_;
     std::vector<std::unique_ptr<Tensor>> tensors_;
     std::
-}
+};
 
 class Model {
 public:
@@ -33,7 +35,7 @@ private:
     std::string proceducer_version_;
     std::string description_;
 
-}
+};
 }
 
 #endif  // __MODEL_EDITOR_MODELS
