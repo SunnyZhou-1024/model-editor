@@ -46,12 +46,14 @@ endforeach()
 # add_subdirectory(${REPO_ROOT}/third_party/onnx EXCLUDE_FROM_ALL)
 
 list(APPEND CXX_SRCS ${REPO_ROOT}/src/model-editor.cpp
+     ${REPO_ROOT}/src/models.cpp
      ${REPO_ROOT}/include/onnx-ml.pb.cc)
 add_executable(model_editor ${CXX_SRCS})
 
 target_include_directories(model_editor PUBLIC ${REPO_ROOT}/include)
 target_include_directories(model_editor PUBLIC ${REPO_ROOT}/third_party/protobuf/src)
 target_link_libraries(model_editor PUBLIC ${REPO_BUILD_DIR}/third_party/protobuf/cmake/libprotobuf.a)
+target_link_libraries(model_editor PUBLIC pthread)
 
 
 

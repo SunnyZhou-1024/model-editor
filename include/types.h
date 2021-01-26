@@ -1,7 +1,9 @@
-#ifndef __MODEL_EDITOR_TYPES
-#define __MODEL_EDITOR_TYPES
+#ifndef MODEL_EDITOR_TYPES_H_
+#define MODEL_EDITOR_TYPES_H_
 
-#define int64 long long
+namespace model_editor {
+
+}
 
 
 #endif
